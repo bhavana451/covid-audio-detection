@@ -82,3 +82,22 @@ python Predict.py
 ## Note
 
 Large datasets and generated model files are not included in this repository due to GitHub file size limitations.
+
+## System Architecture
+
+The proposed framework performs COVID-19 detection using respiratory audio signals and chest X-ray images. Audio data undergoes preprocessing and feature extraction before being passed to a Deep LSTM network for training and prediction.
+
+![System Architecture](images/Architecture.png)
+
+## Model Training Results
+
+The CNN-LSTM model was trained for 400 epochs. The training and validation curves indicate stable convergence with approximately 80% classification accuracy and continuously decreasing validation loss.
+
+![Training Results](accuracy_and_loss.png)
+
+### Performance Summary
+- Model: CNN-LSTM
+- Optimizer: Adam
+- Batch Size: 32
+- Epochs: 400
+- Classification Accuracy: ~80%
